@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type= "text/css" href="/style/style.css">
+   
+    <title>My Chart.js Chart</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="chart">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="inputArea">
+            <h4>Masukan titik kordinat</h4>
+
+
+            <div class="form-group col-md-2">
+                <label class=" control-label col-md-12">Input X1
+
+                    <input id="x1Node" type="number" class="form-control" placeholder="0.0" type="text">
+
+                </label>
+            </div>
+
+
+            <div class="form-group col-md-2">
+                <label class=" control-label col-md-12">Input Y1
+
+                    <input id="y1Node" type="number" class="form-control" placeholder="0.0" type="text">
+
+                </label>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label class=" control-label col-md-12">Input X2
+                    <input id="x2Node" type="number" class="form-control" placeholder="0.0" type="text">
+
+                </label>
+            </div>
+
+
+            <div class="form-group col-md-2">
+                <label class=" control-label col-md-12">Input Y2
+
+                    <input id="y2Node" type="number" class="form-control" placeholder="0.0" type="text">
+
+                </label>
+            </div>
+            <div class="form-group col-md-2">
+                <h4>jarak nya :</h4>
+                <h5 id="jarak">jarak</h5>
+            </div>
+
+            <div class="form-group col-md-2">
+                <h4>sudut nya :</h4>
+                <h5 id="sudut">sudut</h5>
+            </div>
+
+            <div class="col-md-12">
+                <button onclick="updateData()" id="bt-proses" class="btn btn-success">proses</button>
+            </div>
+            
+        </div>
+
+    </div>
+   
+   
+</body>
+<script src="/script/main.js"></script>
+
+</html>

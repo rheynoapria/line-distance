@@ -3,7 +3,7 @@
         
         // Global Options
         Chart.defaults.global.defaultFontFamily = 'Lato';
-        Chart.defaults.global.defaultFontSize = 18;
+        Chart.defaults.global.defaultFontSize = 12;
         Chart.defaults.global.defaultFontColor = '#777';
         let x1,x2,y1,y2,xySquare,distance,degree,xyDegree;
         var dfs = [];
@@ -31,14 +31,15 @@
                  ],
                  pointStyle: 'circle',
                  steppedLine: false,
-                 pointBorderWidth: 10,
+                 pointBorderWidth: 5,
+                 borderWidth:2,
                  beginAtZero: true,
                  data: [{
                          x: 4,
-                         y: 2
+                         y: 4
                      },
                      {
-                         x: 3,
+                         x: 4,
                          y: 4
                      }
                  ]
@@ -89,14 +90,18 @@
                         type: 'linear',
                         position: 'bottom',
                         ticks:{
-                            beginAtZero:true
+                            beginAtZero:true,
+                            stepSize:0.5,
+                            suggestedMax:8
+                            
                         }
                     }],
                     yAxes:[{
                         type:'linear',
                         ticks: {
                             beginAtZero:true,
-                            stepSize:1,
+                            stepSize:0.5,
+                            suggestedMax:8
                         }
                     }]
                 }
